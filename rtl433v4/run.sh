@@ -12,5 +12,5 @@ MQTT_PASS="$(bashio::services mqtt 'password')"
 bashio::log.info "rtl_433 V4: freq ${FREQ}, MQTT ${MQTT_HOST}:${MQTT_PORT}"
 
 exec rtl_433 -f "${FREQ}" \
-  -F "mqtt://${MQTT_HOST}:${MQTT_PORT},user=${MQTT_USER},pass=${MQTT_PASS},retain=1,events=rtl_433/rtl433v4/events" \
+  -F "mqtt://${MQTT_HOST}:${MQTT_PORT},user=${MQTT_USER},pass=${MQTT_PASS},retain=1,events=rtl_433/rtl433v4/events,devices=rtl_433/rtl433v4/devices[/model][/channel][/id]" \
   -M time:iso -M level

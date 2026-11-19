@@ -1,5 +1,5 @@
 name: "rtl_433 V4 (custom)"
-version: "1.0.1"
+version: "1.0.2"
 slug: rtl433v4
 description: "rtl_433 built with the RTL-SDR Blog V4 driver; publishes decoded 433 MHz sensors to MQTT for the auto-discovery bridge"
 url: "https://github.com/merbanan/rtl_433"
