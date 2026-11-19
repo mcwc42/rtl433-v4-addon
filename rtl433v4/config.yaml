@@ -1,0 +1,18 @@
+name: "rtl_433 V4 (custom)"
+version: "1.0.0"
+slug: rtl433v4
+description: "rtl_433 built with the RTL-SDR Blog V4 driver; publishes decoded 433 MHz sensors to MQTT for the auto-discovery bridge"
+url: "https://github.com/merbanan/rtl_433"
+arch:
+  - aarch64
+startup: services
+boot: manual
+init: false
+usb: true
+udev: true
+services:
+  - mqtt:want
+options:
+  frequency: "433.92M"
+schema:
+  frequency: str
