@@ -1,5 +1,5 @@
 name: "Kozy Art Proxy"
-version: "1.0.0"
+version: "1.0.1"
 slug: artproxy
 description: "Relays album art to the Kozy display over local HTTP, so the ESP32 never needs TLS/internet"
 arch:
