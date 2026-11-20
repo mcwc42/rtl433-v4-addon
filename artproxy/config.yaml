@@ -1,0 +1,11 @@
+name: "Kozy Art Proxy"
+version: "1.0.0"
+slug: artproxy
+description: "Relays album art to the Kozy display over local HTTP, so the ESP32 never needs TLS/internet"
+arch:
+  - aarch64
+startup: services
+boot: auto
+init: false
+ports:
+  "8099/tcp": 8099
